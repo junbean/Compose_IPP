@@ -1,7 +1,7 @@
 package com.example.compose_ipp.api
 
 data class Condition(
-    val code: Int,
+    val code: String,
     val icon: String,
     val text: String
 )
