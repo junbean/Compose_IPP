@@ -1,4 +1,4 @@
-package com.example.compose_ipp.bottom_navigation_project.pages
+package com.example.compose_ipp.bottom_navigation_project
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -20,6 +20,9 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import com.example.compose_ipp.bottom_navigation_project.pages.HomePage
+import com.example.compose_ipp.bottom_navigation_project.pages.NotificationPage
+import com.example.compose_ipp.bottom_navigation_project.pages.SettingPage
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,4 +1,4 @@
-package com.example.compose_ipp.api
+package com.example.compose_ipp.api_project.api
 
 data class Location(
     val country: String,

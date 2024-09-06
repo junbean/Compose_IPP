@@ -1,4 +1,4 @@
-package com.example.compose_ipp.bottom_navigation_project.pages
+package com.example.compose_ipp.bottom_navigation_project
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

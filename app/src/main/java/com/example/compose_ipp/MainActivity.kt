@@ -7,10 +7,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.compose_ipp.animation_project.SimpleAnimationPage
-import com.example.compose_ipp.bottom_navigation_project.pages.MainScreen
+import com.example.compose_ipp.api_project.WeatherPage
+import com.example.compose_ipp.api_project.WeatherViewModel
+import com.example.compose_ipp.mvvm_project.view.HomePage
+import com.example.compose_ipp.mvvm_project.viewmodel.HomeViewModel
 import com.example.compose_ipp.ui.theme.Compose_IPPTheme
 
 class MainActivity : ComponentActivity() {
@@ -52,9 +53,22 @@ class MainActivity : ComponentActivity() {
         */
 
         //api 통신
+        /*
         val weatherViewModel =  ViewModelProvider(this)[WeatherViewModel::class.java]
         setContent{
             WeatherPage(weatherViewModel)
+        }
+        */
+
+
+        //MVVM모델 구축
+        val homeViewModel = ViewModelProvider(this)[HomeViewModel::class]
+        setContent{
+            Compose_IPPTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    HomePage(modifier = Modifier.padding(innerPadding), homeViewModel)
+                }
+            }
         }
 
     }
