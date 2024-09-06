@@ -82,4 +82,7 @@ dependencies {
     //coil
     val coilVersion = "2.7.0"
     implementation("io.coil-kt:coil-compose:$coilVersion")
+
+    //gemini AI
+    implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
 }
