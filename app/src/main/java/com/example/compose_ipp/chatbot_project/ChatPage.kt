@@ -11,7 +11,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.filled.Send
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -57,7 +57,7 @@ fun MessageList(modifier: Modifier = Modifier, messageList: List<MessageModel>) 
         modifier = modifier,
         reverseLayout = true
     ) {
-        items(messageList.reversed()){
+        items(messageList.reversed()) {
             MessageRow(messageModel = it)
             Log.d("ai message list", it.toString())
         }
@@ -121,7 +121,7 @@ fun MessageInput(onMessageSend: (String) -> Unit) {
             keyboardController?.hide()
         }) {
             Icon(
-                imageVector = Icons.AutoMirrored.Filled.Send,
+                imageVector = Icons.Default.Send,
                 contentDescription = "Send"
             )
         }
