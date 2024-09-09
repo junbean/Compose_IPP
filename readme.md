@@ -17,7 +17,7 @@
  - 드로우어 레이아웃
  - 다이얼로그
  - 바텀시트 다이얼로그
- - 리사이클러뷰
+ - lazy list(recyclerview)
  - 스와이프 액션
  - 추가 위젯
  - 컴포저블 함수(LaunchedEffect)
