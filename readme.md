@@ -21,8 +21,11 @@
  - 컴포저블 함수(LaunchedEffect)
  - 블루투스 기기 통신
 
-# 2024-09-06
+
+# 알게된것들
+
+## 2024-09-06
  - material3의 버전을 제대로 명시하지 않고 CircularProgressIndicator()를 사용하면 에러가 발생할수 있음
 
-# 2024-09-09
+## 2024-09-09
  - 뷰페이저를 구현할때 androidx.compose.foundation과 com.google.accompanist.pager 서로 방법이 다르다
