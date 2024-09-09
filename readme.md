@@ -7,7 +7,19 @@
  - 상태 저장(remember) 
  - api활용(retrofit)
  - mvvm모델
+ - horizontalPager(viewpager)
+ - TabRow(탭레이아웃)
 
+# 추가되어야 하는 것들
+ - 추가 애니메이션 효과
+ - 스와이프 액션
+ - 액션바
+ - 다이얼로그
+ - 바텀시트 다이얼로그
+ - 리사이클러뷰
+ - 추가 위젯
+ - 컴포저블 함수(LaunchedEffect)
+ - 블루투스 기기 통신
 
 # 2024-09-06
  - material3의 버전을 제대로 명시하지 않고 CircularProgressIndicator()를 사용하면 에러가 발생할수 있음
