@@ -59,7 +59,6 @@ fun MessageList(modifier: Modifier = Modifier, messageList: List<MessageModel>) 
     ) {
         items(messageList.reversed()) {
             MessageRow(messageModel = it)
-            Log.d("ai message list", it.toString())
         }
     }
 }

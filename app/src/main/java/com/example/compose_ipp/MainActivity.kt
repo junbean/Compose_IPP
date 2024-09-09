@@ -3,18 +3,7 @@ package com.example.compose_ipp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.ui.Modifier
-import androidx.lifecycle.ViewModelProvider
-import com.example.compose_ipp.api_project.WeatherPage
-import com.example.compose_ipp.api_project.WeatherViewModel
-import com.example.compose_ipp.chatbot_project.ChatPage
-import com.example.compose_ipp.chatbot_project.ChatViewModel
-import com.example.compose_ipp.mvvm_project.view.HomePage
-import com.example.compose_ipp.mvvm_project.viewmodel.HomeViewModel
+import com.example.compose_ipp.tablayout_viewpager_project.MainScreen
 import com.example.compose_ipp.ui.theme.Compose_IPPTheme
 
 class MainActivity : ComponentActivity() {
@@ -76,6 +65,7 @@ class MainActivity : ComponentActivity() {
         */
 
         //gemini chatbot 만들기
+        /*
         enableEdgeToEdge()
         val chatViewModel = ViewModelProvider(this)[ChatViewModel::class.java]
         setContent {
@@ -85,6 +75,32 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        */
 
+        //horizontalPager - 뷰페이저
+        /*
+        setContent {
+            Compose_IPPTheme {
+                MainScreen()
+
+            }
+        }
+        */
+
+        //ClipTabRow - 탭레이아웃
+        setContent {
+            Compose_IPPTheme {
+                MainScreen()
+            }
+        }
+
+        //뷰페이저 + 탭레이아웃
+        /*
+        setContent {
+            Compose_IPPTheme {
+                MainScreen()
+            }
+        }
+        */
     }
 }

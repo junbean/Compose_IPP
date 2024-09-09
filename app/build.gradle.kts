@@ -85,4 +85,11 @@ dependencies {
 
     //gemini AI
     implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
+
+    //indicator
+    implementation("com.tbuonomo:dotsindicator:5.0")
+
+    //pager 관련 라이브러리
+    implementation("com.google.accompanist:accompanist-pager:0.28.0")
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.28.0")
 }
